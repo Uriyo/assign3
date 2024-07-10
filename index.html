@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <select id="myCategory">
+    <option value="Personal">Personal</option>
+    <option value="Books to read">Books to read</option>
+    <option value="To Buy">To Buy</option>
+  </select>
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li><span class="category">Personal</span>Hit the gym</li>
+  <li class="checked"><span class="category">Personal</span>Pay bills</li>
+  <li><span class="category">Personal</span>Meet George</li>
+  <li><span class="category">To Buy</span>Buy eggs</li>
+  <li><span class="category">Books to read</span>Read a book</li>
+  <li><span class="category">Personal</span>Organize office</li>
+</ul>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
