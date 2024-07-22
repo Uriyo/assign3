@@ -3,29 +3,29 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="./style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <div class="container">
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">My To Do List</h2>
+  <h2 style="margin:5px"><i class="fa-regular fa-clipboard"></i> My To Do List </h2>
   <input type="text" id="myInput" placeholder="Title...">
   <select id="myCategory">
     <option value="Personal">Personal</option>
     <option value="Books to read">Books to read</option>
-    <option value="To Buy">To Buy</option>
+    <option value="To Buy">To Buy <i class="fa-solid fa-cart-shopping"></i></option>
   </select>
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
 <ul id="myUL">
-  <li><span class="category">Personal</span>Hit the gym</li>
-  <li class="checked"><span class="category">Personal</span>Pay bills</li>
-  <li><span class="category">Personal</span>Meet George</li>
-  <li><span class="category">To Buy</span>Buy eggs</li>
-  <li><span class="category">Books to read</span>Read a book</li>
-  <li><span class="category">Personal</span>Organize office</li>
+  <li><i class="fas fa-user"></i> Hit the gym</li>
+  <li class="checked"><i class="fas fa-user"></i> Pay bills</li>
+  <li><i class="fas fa-book"></i> Read a book</li>
 </ul>
+
 </div>
+
 <script src="./index.js"></script>
 </body>
 </html>

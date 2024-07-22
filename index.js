@@ -32,15 +32,20 @@ function newElement() {
   var inputValue = document.getElementById("myInput").value;
   var categoryValue = document.getElementById("myCategory").value;
   var t = document.createTextNode(inputValue);
-  var c = document.createTextNode(categoryValue);
-  var span = document.createElement("SPAN");
-  span.className = "category";
-  span.appendChild(c);
+
+  var icon = document.createElement("I");
+  if (categoryValue === "Personal") {
+    icon.className = "fas fa-user";
+  } else if (categoryValue === "Books to read") {
+    icon.className = "fas fa-book";
+  } else if (categoryValue === "To Buy") {
+    icon.className = "fas fa-shopping-cart";
+  }
 
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    li.appendChild(span);
+    li.appendChild(icon);
     li.appendChild(t);
     document.getElementById("myUL").appendChild(li);
   }
@@ -59,3 +64,4 @@ function newElement() {
     }
   }
 }
+

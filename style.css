@@ -84,9 +84,9 @@ body {
   
   /* Style the header */
   .header {
-    background-color: #f44336;
+    background-color: rgb(223, 223, 223);
     padding: 30px 40px;
-    color: white;
+    color: black;
     text-align: center;
   }
   
@@ -123,8 +123,8 @@ body {
   .addBtn {
     padding: 10px;
     width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    background: #000000;
+    color: #ffffff;
     float: left;
     text-align: center;
     font-size: 16px;
@@ -142,4 +142,6 @@ body {
     font-weight: bold;
     margin-right: 10px;
   }
-  
+  .notepad{
+    width: 2%;
+  }
